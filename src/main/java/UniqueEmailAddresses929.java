@@ -1,7 +1,18 @@
-// assumption, email name only contains small letters and . +
 
+import java.util.HashSet;
+import java.util.Set;
 
-class 929_UniqueEmailAddressesTest {
+/**
+ * Question 929. - Unique Email Addresses
+ * link - https://leetcode.com/problems/unique-email-addresses/
+ */
+
+public class UniqueEmailAddresses929 {
+
+    /**
+     * @param emails
+     * @return int number of unique email address*
+     */
     public int numUniqueEmails(String[] emails) {
         Set<String> res = new HashSet<>();
 
@@ -26,7 +37,6 @@ class 929_UniqueEmailAddressesTest {
             }
             res.add(sb.toString());
         }
-
         return res.size();
     }
 }
